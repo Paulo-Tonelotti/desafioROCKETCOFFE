@@ -1,0 +1,139 @@
+:root {
+    --background: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.container {
+    background: var(--background);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 100vh;
+    grid-template-areas:
+    "blur1 blur2";
+
+}
+
+.blur1 {
+    grid-area: blur1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.blur2 {
+    grid-area: blur2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+    height: 100%;
+}
+
+.navBar {
+    position: absolute;
+    width: 1300px;
+    height: 50px;
+    justify-self: center;
+    justify-content: center;
+    top: 70px;
+    display: flex;
+}
+
+.listnavBar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 270px;
+
+}
+
+
+.listnavBar a {
+    padding-left: 40px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.navBar button {
+    position: relative;
+    float: right;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #8257E5;
+    border-radius: 6px;
+    margin-left: 160px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 15px;
+    background-color: transparent;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.textPrincipal {
+    position: absolute;
+    top: 200px;
+    justify-self: center;
+    text-align: center;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 109px;
+
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.textPrincipal h1 {
+    color: #FFF;
+}
+
+.textPrincipal h2 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 109px;
+    letter-spacing: -0.03em;
+
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+.imagemPrincipal {
+    position: absolute;
+    justify-self: center;
+    top: 640px;
+}
+
+.imagemPrincipal img {
+    width: 800px;
+    height: 400px;
+    
+}
+
